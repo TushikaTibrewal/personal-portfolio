@@ -10,6 +10,8 @@ export const metadata: Metadata = {
   title: "Tushika Tibrewal Portfolio - Developer & Coder",
   description: "Passionate Coder & DSA Learning Enthusiast specializing in full-stack development",
   generator: "v0.app",
+  viewport: "width=device-width, initial-scale=1",
+  themeColor: "#0f172a",
 }
 
 export default function RootLayout({
