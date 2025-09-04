@@ -1,6 +1,6 @@
 "use client"
 
-import { Code, Database, Globe, Cpu, Users, Lightbulb } from "lucide-react"
+import { Code, Database, Globe, Cpu, Users, Lightbulb, Languages } from "lucide-react"
 import { useEffect, useState, useRef } from "react"
 
 export function Skills() {
@@ -23,6 +23,12 @@ export function Skills() {
     { name: "Team Work", icon: Users },
   ]
 
+  const languageSkills = [
+    { name: "English", level: 95, flag: "🇺🇸" },
+    { name: "Hindi", level: 100, flag: "🇮🇳" },
+    { name: "Japanese", level: 65, flag: "🇯🇵" },
+  ]
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -34,6 +40,14 @@ export function Skills() {
               setTimeout(() => {
                 setAnimatedLevels((prev) => ({ ...prev, [skill.name]: skill.level }))
               }, index * 200)
+            })
+            languageSkills.forEach((skill, index) => {
+              setTimeout(
+                () => {
+                  setAnimatedLevels((prev) => ({ ...prev, [skill.name]: skill.level }))
+                },
+                (technicalSkills.length + index) * 200,
+              )
             })
           }
         })
@@ -65,7 +79,7 @@ export function Skills() {
           </span>
         </h2>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-3 gap-8">
           {/* Technical Skills */}
           <div
             className={`glass-card p-8 rounded-2xl hover:glow-cyan transition-all duration-1000 ${
@@ -104,12 +118,48 @@ export function Skills() {
             </div>
           </div>
 
+          <div
+            className={`glass-card p-8 rounded-2xl hover:glow-purple transition-all duration-1000 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
+            style={{ transitionDelay: "200ms" }}
+          >
+            <h3 className="text-2xl font-semibold mb-8 text-purple-400 flex items-center gap-3">
+              <Languages className="w-6 h-6 animate-pulse" />
+              Languages
+            </h3>
+            <div className="space-y-6">
+              {languageSkills.map((skill, index) => (
+                <div key={skill.name} className="group">
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center gap-3">
+                      <span className="text-2xl group-hover:scale-110 transition-transform duration-300">
+                        {skill.flag}
+                      </span>
+                      <span className="font-medium">{skill.name}</span>
+                    </div>
+                    <span className="text-sm text-muted-foreground">{animatedLevels[skill.name] || 0}%</span>
+                  </div>
+                  <div className="w-full bg-muted/20 rounded-full h-2 overflow-hidden">
+                    <div
+                      className="bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full transition-all duration-1000 group-hover:glow-purple animate-gradient"
+                      style={{
+                        width: `${animatedLevels[skill.name] || 0}%`,
+                        transitionDelay: `${(technicalSkills.length + index) * 200}ms`,
+                      }}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Soft Skills */}
           <div
             className={`glass-card p-8 rounded-2xl hover:glow-pink transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
             }`}
-            style={{ transitionDelay: "300ms" }}
+            style={{ transitionDelay: "400ms" }}
           >
             <h3 className="text-2xl font-semibold mb-8 text-secondary flex items-center gap-3">
               <Users className="w-6 h-6 animate-pulse" />
