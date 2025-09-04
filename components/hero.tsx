@@ -83,23 +83,23 @@ export function Hero() {
             </div>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 text-balance leading-tight">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-7xl mb-4 sm:mb-6 text-balance leading-tight">
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent animate-gradient">
               Tushika Tibrewal
             </span>
             <br />
-            <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-normal">
+            <span className="font-heading text-xl sm:text-2xl md:text-3xl lg:text-4xl text-muted-foreground font-normal">
               Portfolio
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground mb-6 sm:mb-8 text-pretty min-h-[2rem] px-2">
+          <p className="font-body text-lg sm:text-xl md:text-2xl text-muted-foreground mb-6 sm:mb-8 text-pretty min-h-[2rem] px-2">
             {typedText}
             <span className="animate-pulse">|</span>
           </p>
 
-          <p className="text-base sm:text-lg text-muted-foreground mb-8 sm:mb-12 max-w-2xl mx-auto text-pretty px-2">
+          <p className="font-body text-base sm:text-lg text-muted-foreground mb-8 sm:mb-12 max-w-2xl mx-auto text-pretty px-2">
             Computer Science student at SRMIST specializing in full-stack development with expertise in HTML, CSS,
             Python, Java, and C. I love solving complex problems and building innovative solutions.
           </p>
@@ -107,7 +107,7 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
             <Button
               size="lg"
-              className="glow-cyan hover:glow-cyan transition-all duration-300 animate-pulse-glow w-full sm:w-auto"
+              className="glow-cyan hover:glow-cyan transition-all duration-300 animate-pulse-glow w-full sm:w-auto font-heading"
               onClick={scrollToAbout}
             >
               Explore My Work
@@ -115,7 +115,7 @@ export function Hero() {
             <Button
               variant="outline"
               size="lg"
-              className="glass border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 bg-transparent hover:glow-pink w-full sm:w-auto"
+              className="glass border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 bg-transparent hover:glow-pink w-full sm:w-auto font-heading"
             >
               Download Resume
             </Button>
