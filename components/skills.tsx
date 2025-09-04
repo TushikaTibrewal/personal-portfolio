@@ -15,6 +15,8 @@ export function Skills() {
     { name: "Java", icon: Code, level: 82, logo: "/java-coffee-cup-logo-red.jpg" },
     { name: "C", icon: Cpu, level: 80, logo: "/c-programming-language-logo-blue.jpg" },
     { name: "DSA", icon: Database, level: 43, logo: "/data-structures-algorithms-tree-graph-icon.jpg" },
+    { name: "Git", icon: Code, level: 90, logo: "/git-logo-orange.jpg" },
+    { name: "GitHub", icon: Code, level: 90, logo: "/github-logo-white.jpg" },
   ]
 
   const softSkills = [

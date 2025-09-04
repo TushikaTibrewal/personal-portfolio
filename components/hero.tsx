@@ -76,8 +76,9 @@ export function Hero() {
                 alt="Tushika Tibrewal"
                 width={120}
                 height={120}
-                className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full border-4 border-primary/30 shadow-2xl object-cover object-top animate-pulse-glow"
+                className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-40 lg:h-40 rounded-full border-4 border-primary/30 shadow-2xl object-cover object-center scale-150 animate-pulse-glow"
                 priority
+                style={{ objectPosition: "50% 25%" }}
               />
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-secondary/20 pointer-events-none animate-gradient" />
             </div>
