@@ -9,12 +9,12 @@ export function Skills() {
   const sectionRef = useRef<HTMLElement>(null)
 
   const technicalSkills = [
-    { name: "HTML", icon: Globe, level: 90 },
-    { name: "CSS", icon: Globe, level: 85 },
-    { name: "Python", icon: Code, level: 88 },
-    { name: "Java", icon: Code, level: 82 },
-    { name: "C", icon: Cpu, level: 80 },
-    { name: "DSA", icon: Database, level: 43 },
+    { name: "HTML", icon: Globe, level: 90, logo: "/html5-orange-logo.png" },
+    { name: "CSS", icon: Globe, level: 85, logo: "/css3-blue-logo.png" },
+    { name: "Python", icon: Code, level: 88, logo: "/python-snake-logo-blue-yellow.jpg" },
+    { name: "Java", icon: Code, level: 82, logo: "/java-coffee-cup-logo-red.jpg" },
+    { name: "C", icon: Cpu, level: 80, logo: "/c-programming-language-logo-blue.jpg" },
+    { name: "DSA", icon: Database, level: 43, logo: "/data-structures-algorithms-tree-graph-icon.jpg" },
   ]
 
   const softSkills = [
@@ -81,7 +81,11 @@ export function Skills() {
                 <div key={skill.name} className="group">
                   <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center gap-3">
-                      <skill.icon className="w-5 h-5 text-primary group-hover:animate-bounce transition-all" />
+                      <img
+                        src={skill.logo || "/placeholder.svg"}
+                        alt={`${skill.name} logo`}
+                        className="w-6 h-6 group-hover:scale-110 transition-transform duration-300"
+                      />
                       <span className="font-medium">{skill.name}</span>
                     </div>
                     <span className="text-sm text-muted-foreground">{animatedLevels[skill.name] || 0}%</span>
