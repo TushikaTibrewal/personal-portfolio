@@ -6,7 +6,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, MapPin, Phone, Send, Linkedin } from "lucide-react"
+import { Mail, MapPin, Phone, Send, Linkedin, Github } from "lucide-react"
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -78,6 +78,23 @@ export function Contact() {
                     className="text-muted-foreground hover:text-primary transition-colors duration-300"
                   >
                     Tushika Tibrewal
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 glass-card rounded-full flex items-center justify-center">
+                  <Github className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-medium">GitHub</p>
+                  <a
+                    href="https://github.com/TushikaTibrewal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                  >
+                    TushikaTibrewal
                   </a>
                 </div>
               </div>

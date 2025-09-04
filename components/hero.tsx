@@ -71,6 +71,8 @@ export function Hero() {
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Tushika Tibrewal
             </span>
+            <br />
+            <span className="text-3xl md:text-4xl text-muted-foreground font-normal">Portfolio</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-pretty">
