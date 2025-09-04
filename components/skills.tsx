@@ -7,7 +7,7 @@ export function Skills() {
     { name: "Python", icon: Code, level: 88 },
     { name: "Java", icon: Code, level: 82 },
     { name: "C", icon: Cpu, level: 80 },
-    { name: "DSA", icon: Database, level: 75 },
+    { name: "DSA", icon: Database, level: 43 },
   ]
 
   const softSkills = [

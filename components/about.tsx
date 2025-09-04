@@ -9,9 +9,9 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-lg text-muted-foreground mb-6 text-pretty leading-relaxed">
-                I'm a dedicated Computer Science student with a passion for creating innovative digital solutions. My
-                journey in programming started with curiosity and has evolved into a deep love for problem-solving and
-                continuous learning.
+                I'm a dedicated Computer Science student at SRMIST with a passion for creating innovative digital
+                solutions. My journey in programming started with curiosity and has evolved into a deep love for
+                problem-solving and continuous learning.
               </p>
               <p className="text-lg text-muted-foreground mb-6 text-pretty leading-relaxed">
                 With strong foundations in multiple programming languages and a keen interest in Data Structures and

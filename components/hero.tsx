@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ChevronDown, Code, Coffee } from "lucide-react"
+import Image from "next/image"
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false)
@@ -51,12 +52,27 @@ export function Hero() {
         }`}
       >
         <div className="glass-card p-12 rounded-2xl max-w-4xl mx-auto">
+          <div className="mb-8 flex justify-center">
+            <div className="relative">
+              <Image
+                src="/profile-photo.jpg"
+                alt="Tushika Tibrewal"
+                width={150}
+                height={150}
+                className="rounded-full border-4 border-primary/30 shadow-2xl object-cover object-top"
+                priority
+              />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-secondary/20 pointer-events-none" />
+            </div>
+          </div>
+
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Tushika Tibrewal
             </span>
           </h1>
+
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-pretty">
             Passionate Coder & DSA Learning Enthusiast
           </p>

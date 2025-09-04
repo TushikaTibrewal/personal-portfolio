@@ -6,7 +6,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, MapPin, Phone, Send } from "lucide-react"
+import { Mail, MapPin, Phone, Send, Linkedin } from "lucide-react"
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -51,7 +51,7 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-muted-foreground">tushika.tibrewal@email.com</p>
+                  <p className="text-muted-foreground">tushikatibrewal20111049@gmail.com</p>
                 </div>
               </div>
 
@@ -61,7 +61,24 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="font-medium">Phone</p>
-                  <p className="text-muted-foreground">+91 XXXXX XXXXX</p>
+                  <p className="text-muted-foreground">+91 7439563546</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 glass-card rounded-full flex items-center justify-center">
+                  <Linkedin className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-medium">LinkedIn</p>
+                  <a
+                    href="https://www.linkedin.com/in/tushika-tibrewal-00488331b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Brg8%2BWGRjQgOt3gtGPgXYWQ%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                  >
+                    Tushika Tibrewal
+                  </a>
                 </div>
               </div>
 
